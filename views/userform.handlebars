@@ -1,0 +1,22 @@
+ {{#if auth}}
+<h1>Adicionar Usuário</h1>
+<form action="/users/save" method="post">
+  <div>
+    <input type="text" name="name" placeholder="Digite seu nome">
+    <input type="text" name="age" placeholder="Digite idade">
+    <input type="submit" value="Cadastrar" />
+  </div>
+</form>
+
+<hr>
+<form action="/users/home" method="get">
+
+<button type="submit"  class="btn btn-primary">Home</button>
+</form>
+{{else}}
+
+<form action="/users/add" method="get">
+      <h2>Faça o Login!</h2>
+<button type="submit"  class="btn btn-primary">Login</button>
+
+ {{/if }}

@@ -1,0 +1,16 @@
+{{#if auth}}
+
+<h2> Usuários Cadastrados</h2>
+{{#each users}}
+<ul>
+  <li>
+    {{>users}}
+
+  </li>
+</ul>
+{{/each}}
+<form action="/users/home/" method="get">
+
+<button type="submit" class="btn btn-primary">Home</button>
+</form>
+  {{/if}}

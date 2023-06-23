@@ -1,0 +1,28 @@
+{{#if auth}}
+
+  <h2>{{message}}</h2>
+  <h1>Cadastro de Clientes</h1>
+  <hr />
+  <div class="central">
+    <div class="row">
+      <div class="col-md-3">
+        <form action="/users/add" method="get">
+          <button type="submit" class="btn btn-primary">Novo Usuário</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form action="/users/logout" method="get">
+          <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{{else}}
+
+  <form action="/users/add" method="get">
+    <h2>Faça o Login!</h2>
+    <button type="submit">Login</button>
+  </form>
+
+{{/if}}
