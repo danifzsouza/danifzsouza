@@ -1,0 +1,16 @@
+.main_body{
+    padding: 5rem;
+    text-align: center;
+    background-color: #e9d5c4;
+    border-bottom: 2px solid black;
+  }
+  .aviso_404{
+    color: brown;
+    text-decoration: underline;
+  }
+  .central{
+    width: 80%;
+    margin: 0% 30% 0% 30%;
+    align-items: center;
+    
+  }
